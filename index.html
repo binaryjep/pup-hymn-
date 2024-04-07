@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href= "styles.css">
-    <title>Synced Lyrics</title>
+    <title>PUP Hymn - Synced Audio with Lyrics</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div id = "container">
-        <audio class = "player" src = "Imno ng PUP (The PUP Hymn).mp3" controls></audio>
-
-        <div id="textContainer"></div>
+    <div id="head">
+        <div id="logo">
+            <img src = "pup_logo.png"> 
+        </div>
+        <h1>Polytechnic University of the Philippines</h1>
     </div>
-<script src = "script.js"></script>
-</body>
 
+    <h2>PUP Hymn</h2>
+
+    <div id="audio-container" class="container">
+        <audio id="audio" controls>
+            <source src="Imno ng PUP (The PUP Hymn).mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <h3>PUP Hymn Lyrics</h3>
+
+    <div id="lyrics-container" class="container">
+        <ul id="lyrics"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
